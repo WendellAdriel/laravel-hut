@@ -1,0 +1,38 @@
+{
+    "name": "wendelladriel/laravel-hut",
+    "description": "A collection of Helpers and Utilities for your Laravel application",
+    "type": "library",
+    "keywords": ["laravel", "helpers", "utilities"],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "WendellAdriel\\LaravelHut\\": "src/"
+        }
+    },
+    "support": {
+        "issues": "https://github.com/WendellAdriel/laravel-hut/issues",
+        "source": "https://github.com/WendellAdriel/laravel-hut"
+    },
+    "authors": [
+        {
+            "name": "Wendell Adriel",
+            "email": "wendelladriel.ti@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "WendellAdriel\\LaravelHut\\LaravelHutServiceProvider"
+            ],
+            "aliases": {
+                "LaravelHut": "WendellAdriel\\LaravelHut\\Facades\\LaravelHut"
+            }
+        }
+    }
+}
